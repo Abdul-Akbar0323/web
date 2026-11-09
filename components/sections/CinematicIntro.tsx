@@ -74,7 +74,9 @@ export default function CinematicIntro() {
             {[...Array(5)].map((_, i) => (
               <div
                 key={i}
-                ref={el => (circleRefs.current[i] = el)}
+                ref={(el) => {
+  circleRefs.current[i] = el;
+}}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/20"
                 style={{
                   width: `${(i + 1) * 200}px`,

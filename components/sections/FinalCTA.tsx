@@ -81,7 +81,7 @@ export default function FinalCTA() {
             ref={textRef}
             className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-8 leading-tight"
           >
-            Let's Create Something
+           <p>Don&apos;t miss our experience.</p>
             <br />
             <span className="gradient-accent">Extraordinary</span>
           </h2>

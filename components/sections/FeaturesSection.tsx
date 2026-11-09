@@ -138,8 +138,9 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              ref={el => (cardsRef.current[index] = el)}
-              className="group relative p-8 glass rounded-3xl interactive cursor-pointer transition-all duration-500"
+ref={(el) => {
+  cardsRef.current[index] = el;
+}}              className="group relative p-8 glass rounded-3xl interactive cursor-pointer transition-all duration-500"
               style={{ transformStyle: 'preserve-3d' }}
             >
               {/* Gradient background on hover */}
